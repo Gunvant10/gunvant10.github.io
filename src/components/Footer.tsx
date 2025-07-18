@@ -16,29 +16,7 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Right side - Social Links */}
-          <div className="flex items-center space-x-4">
-            <a
-              href="#"
-              className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-smooth"
-              aria-label="GitHub"
-            >
-              <Github className="h-5 w-5" />
-            </a>
-            <a
-              href="#"
-              className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-smooth"
-              aria-label="LinkedIn"
-            >
-              <Linkedin className="h-5 w-5" />
-            </a>
-            <a
-              href="mailto:gunvant@example.com"
-              className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-smooth"
-              aria-label="Email"
-            >
-              <Mail className="h-5 w-5" />
-            </a>
+          <div className="hidden">
           </div>
         </div>
       </div>

@@ -9,8 +9,7 @@ const Navigation = () => {
     { id: 'about', label: 'About Me' },
     { id: 'experience', label: 'Experience' },
     { id: 'projects', label: 'Projects' },
-    { id: 'skills', label: 'Skills' },
-    { id: 'contact', label: 'Contact' }
+    { id: 'skills', label: 'Skills' }
   ];
 
   useEffect(() => {
@@ -62,13 +61,8 @@ const Navigation = () => {
             ))}
           </div>
 
-          <Button 
-            variant="outline" 
-            className="glow-accent hover:animate-glow-pulse"
-            onClick={() => window.open('#', '_blank')}
-          >
-            Download Resume
-          </Button>
+          <div className="hidden md:block">
+          </div>
         </div>
       </div>
     </nav>
