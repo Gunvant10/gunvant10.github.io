@@ -1,32 +1,23 @@
 import { Button } from '@/components/ui/button';
 import { ArrowDown, Download, Mail } from 'lucide-react';
 import profileImage from '@/assets/profile-photo.jpg';
-
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
-
-  return (
-    <section id="home" className="min-h-screen hero-gradient flex items-center justify-center relative overflow-hidden">
+  return <section id="home" className="min-h-screen hero-gradient flex items-center justify-center relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           {/* Profile Image */}
-          <div className="mb-8 animate-fade-in">
-            <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-primary glow-accent">
-              <img 
-                src={profileImage} 
-                alt="Gunvant Patil" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
+          
 
           {/* Main Title */}
           <div className="mb-6 animate-fade-in [animation-delay:0.2s]">
@@ -46,19 +37,11 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-fade-in [animation-delay:0.6s]">
-            <Button 
-              size="lg" 
-              className="glow-accent hover:animate-glow-pulse"
-              onClick={() => scrollToSection('about')}
-            >
+            <Button size="lg" className="glow-accent hover:animate-glow-pulse" onClick={() => scrollToSection('about')}>
               <ArrowDown className="mr-2 h-4 w-4" />
               Explore My Work
             </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              onClick={() => window.open('#', '_blank')}
-            >
+            <Button variant="outline" size="lg" onClick={() => window.open('#', '_blank')}>
               <Download className="mr-2 h-4 w-4" />
               Download Resume
             </Button>
@@ -66,11 +49,7 @@ const HeroSection = () => {
 
           {/* Contact CTA */}
           <div className="animate-fade-in [animation-delay:0.8s]">
-            <Button 
-              variant="ghost" 
-              onClick={() => scrollToSection('contact')}
-              className="text-primary hover:text-primary-foreground hover:bg-primary"
-            >
+            <Button variant="ghost" onClick={() => scrollToSection('contact')} className="text-primary hover:text-primary-foreground hover:bg-primary">
               <Mail className="mr-2 h-4 w-4" />
               Get In Touch
             </Button>
@@ -84,8 +63,6 @@ const HeroSection = () => {
           <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
