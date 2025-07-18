@@ -55,7 +55,7 @@ const ExperienceSection = () => {
                     <h3 className="text-2xl font-bold text-primary">Senior Data Scientist</h3>
                     <div className="flex items-center text-muted-foreground text-sm">
                       <Calendar className="h-4 w-4 mr-1" />
-                      September 2024 – Present
+                      July 2025 – Present
                     </div>
                   </div>
                   <h4 className="text-lg font-semibold mb-4">Bizzfy</h4>
