@@ -15,7 +15,12 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       
       <div className="container mx-auto px-6 text-center relative z-10">
-        
+        <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">
+          Gunvant Patil
+        </h1>
+        <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto">
+          Data Scientist with 5 years of experience in Machine Learning, Computer Vision, NLP & Reinforcement Learning.
+        </p>
       </div>
 
       {/* Scroll indicator */}
